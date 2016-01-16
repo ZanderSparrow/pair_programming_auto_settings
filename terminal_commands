@@ -1,0 +1,28 @@
+
+# navigate to desktop
+cd /Users/student/Desktop ;
+
+# download Flux.zip to desktop
+curl -o /Users/student/Desktop/Flux.zip https://justgetflux.com/mac/Flux.zip ;
+
+# make sure it's downloaded by  waiting 1 second
+sleep 1 ;
+
+# unzip the file
+unzip Flux.zip ;
+
+# move the Flux.app into Applications folder
+mv /Users/student/Desktop/Flux.app /Users/student/Applications ;
+
+# navigate into Applications
+cd /Users/student/Applications ;
+
+# Open the app!
+open -a Flux.app ;
+
+# delete the zip file which was originally downloaded
+rm -f /Users/student/Desktop/Flux.zip ;
+
+# this doesn't really need to be here but without a final command the second to last command will not run automatically.
+# this should be fixed up somehow. Not exactly sure how yet. Please advise!
+pwd ;
